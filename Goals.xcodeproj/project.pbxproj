@@ -18,6 +18,12 @@
 		834A1F44143B683400C3D13E /* GoalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A1F42143B683400C3D13E /* GoalsViewController.xib */; };
 		834A1F48143B6AF000C3D13E /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A1F46143B6AEF00C3D13E /* ProgressViewController.m */; };
 		834A1F49143B6AF000C3D13E /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A1F47143B6AF000C3D13E /* ProgressViewController.xib */; };
+		83EA38FB143CD6B9006B943A /* Goals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83EA38F9143CD6B9006B943A /* Goals.xcdatamodeld */; };
+		83EA3904143CE58B006B943A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EA3903143CE58B006B943A /* CoreData.framework */; };
+		83EA3907143D1C3D006B943A /* Completion.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA3906143D1C3C006B943A /* Completion.m */; };
+		83EA390A143D1C50006B943A /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA3909143D1C50006B943A /* Group.m */; };
+		83EA390D143D1C69006B943A /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA390C143D1C69006B943A /* Goal.m */; };
+		83EA3910143D1C77006B943A /* TimeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA390F143D1C77006B943A /* TimeFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,16 @@
 		834A1F45143B6AEF00C3D13E /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
 		834A1F46143B6AEF00C3D13E /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 		834A1F47143B6AF000C3D13E /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		83EA38FA143CD6B9006B943A /* Goals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goals.xcdatamodel; sourceTree = "<group>"; };
+		83EA3903143CE58B006B943A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83EA3905143D1C3C006B943A /* Completion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Completion.h; sourceTree = "<group>"; };
+		83EA3906143D1C3C006B943A /* Completion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Completion.m; sourceTree = "<group>"; };
+		83EA3908143D1C50006B943A /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		83EA3909143D1C50006B943A /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		83EA390B143D1C69006B943A /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
+		83EA390C143D1C69006B943A /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
+		83EA390E143D1C76006B943A /* TimeFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeFrame.h; sourceTree = "<group>"; };
+		83EA390F143D1C77006B943A /* TimeFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EA3904143CE58B006B943A /* CoreData.framework in Frameworks */,
 				834A1F11143B640E00C3D13E /* UIKit.framework in Frameworks */,
 				834A1F13143B640E00C3D13E /* Foundation.framework in Frameworks */,
 				834A1F15143B640E00C3D13E /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +91,7 @@
 		834A1F0F143B640E00C3D13E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83EA3903143CE58B006B943A /* CoreData.framework */,
 				834A1F10143B640E00C3D13E /* UIKit.framework */,
 				834A1F12143B640E00C3D13E /* Foundation.framework */,
 				834A1F14143B640E00C3D13E /* CoreGraphics.framework */,
@@ -94,6 +112,15 @@
 				834A1F45143B6AEF00C3D13E /* ProgressViewController.h */,
 				834A1F46143B6AEF00C3D13E /* ProgressViewController.m */,
 				834A1F47143B6AF000C3D13E /* ProgressViewController.xib */,
+				83EA38F9143CD6B9006B943A /* Goals.xcdatamodeld */,
+				83EA390E143D1C76006B943A /* TimeFrame.h */,
+				83EA390F143D1C77006B943A /* TimeFrame.m */,
+				83EA390B143D1C69006B943A /* Goal.h */,
+				83EA390C143D1C69006B943A /* Goal.m */,
+				83EA3908143D1C50006B943A /* Group.h */,
+				83EA3909143D1C50006B943A /* Group.m */,
+				83EA3905143D1C3C006B943A /* Completion.h */,
+				83EA3906143D1C3C006B943A /* Completion.m */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -177,6 +204,11 @@
 				834A1F21143B640E00C3D13E /* GoalsAppDelegate.m in Sources */,
 				834A1F43143B683400C3D13E /* GoalsViewController.m in Sources */,
 				834A1F48143B6AF000C3D13E /* ProgressViewController.m in Sources */,
+				83EA38FB143CD6B9006B943A /* Goals.xcdatamodeld in Sources */,
+				83EA3907143D1C3D006B943A /* Completion.m in Sources */,
+				83EA390A143D1C50006B943A /* Group.m in Sources */,
+				83EA390D143D1C69006B943A /* Goal.m in Sources */,
+				83EA3910143D1C77006B943A /* TimeFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +318,22 @@
 				834A1F35143B640E00C3D13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83EA38F9143CD6B9006B943A /* Goals.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83EA38FA143CD6B9006B943A /* Goals.xcdatamodel */,
+			);
+			currentVersion = 83EA38FA143CD6B9006B943A /* Goals.xcdatamodel */;
+			path = Goals.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 834A1F03143B640E00C3D13E /* Project object */;
 }
