@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11B26" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Completion" representedClassName="Completion">
+        <attribute name="timestamp" optional="YES" attributeType="Date"/>
+        <relationship name="goal" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Goal" inverseName="completions" inverseEntity="Goal"/>
+    </entity>
+    <entity name="Goal" representedClassName="Goal">
+        <attribute name="active" optional="YES" attributeType="Boolean"/>
+        <attribute name="details" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="pointValue" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <relationship name="completions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Completion" inverseName="goal" inverseEntity="Completion"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="goals" inverseEntity="Group"/>
+        <relationship name="timeFrame" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TimeFrame" inverseName="goals" inverseEntity="TimeFrame"/>
+    </entity>
+    <entity name="Group" representedClassName="Group">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="goals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Goal" inverseName="groups" inverseEntity="Goal"/>
+    </entity>
+    <entity name="TimeFrame" representedClassName="TimeFrame">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="goals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Goal" inverseName="timeFrame" inverseEntity="Goal"/>
+    </entity>
+    <elements>
+        <element name="Goal" positionX="-452" positionY="-108" width="119" height="150"/>
+        <element name="TimeFrame" positionX="-234" positionY="-81" width="128" height="75"/>
+        <element name="Group" positionX="-677" positionY="-87" width="128" height="75"/>
+        <element name="Completion" positionX="-461" positionY="81" width="128" height="75"/>
+    </elements>
+</model>
